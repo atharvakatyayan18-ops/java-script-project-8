@@ -1,0 +1,41 @@
+<html>
+    <head>
+<style>
+
+</style>
+    </head>
+    <body>
+        <h2>my superhero cards</h2>
+        <button onclick="superherocards()">My superhero cards</button>
+     
+            <div id="card1"> </div>
+            <div id="card2"></div>
+            <div id="card3"></div>
+
+
+<script>
+class superhero {
+    constructor(name,information){
+        this.name = name;
+        this.information = information;
+    }
+    describe(){
+        return this.name = ":" + this.information
+    }
+}
+
+function superherocards(){
+    let p1 = new superhero ("batman","resembles a bat")
+    let p2 = new superhero ("spiderman","resembles a spider")
+    let p3 = new superhero ("iron man","resembles technology idk why")
+
+
+document.getElementById(card1).innerHTML = p1.describe() + "<br>";
+document.getElementById(card1).innerHTML = p2.describe() + "<br>";
+document.getElementById(card1).innerHTML = p3.describe() + "<br>";
+}
+</script>
+
+
+    </body>
+</html>
